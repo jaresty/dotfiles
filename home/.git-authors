@@ -1,0 +1,26 @@
+authors:
+  luan: Luan Santos; cfcluan
+  ls: Luan Santos
+  tv: Tom Viehman
+  rdr: Rob Day Reynolds
+  db: Danny Berger
+  eve: Eve Quintana
+  zg: Zachary Gershman
+  ja: Joshua Aresty
+  cd: Chris Dutra
+
+email:
+  prefix: pair
+  domain: gmail.com
+
+email_addresses:
+  ls: lsantos@pivotal.io
+  tv: tviehman@pivotal.io
+  rdr: rdayreynolds@pivotal.io
+  db: dberger@pivotal.io
+  eve: jquintana@pivotal.io
+  zg: zgershman@pivotal.io
+  ja: joshua.aresty@emc.com
+  cd: cdutra@pivotal.io
+
+global: true

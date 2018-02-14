@@ -1,0 +1,11 @@
+alacritty-git
+autorandr
+direnv
+git-duet
+google-chrome
+nerd-fonts-complete
+polybar-git
+st
+trizen
+ttf-iosevka-pack
+zoom
