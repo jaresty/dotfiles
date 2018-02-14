@@ -42,6 +42,7 @@ dhcpcd
 dialog
 diff-so-fancy
 diffutils
+dnssec-anchors
 double-conversion
 dunst
 e2fsprogs
@@ -120,6 +121,7 @@ kmod
 krb5
 lame
 lcms2
+ldns
 less
 libaio
 libarchive
@@ -283,6 +285,7 @@ nss
 opencore-amr
 openjpeg2
 openresolv
+openssh
 openssl
 openssl-1.0
 opus
