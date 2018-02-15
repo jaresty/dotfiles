@@ -391,6 +391,7 @@ tmux
 tree
 tslib
 tzdata
+udftools
 unibilium
 usbutils
 util-linux
