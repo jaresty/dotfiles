@@ -1,8 +1,10 @@
 alacritty-git
+antigen-git
 autorandr
 direnv
 git-duet
 google-chrome
+lastpass-cli-git
 nerd-fonts-complete
 polybar-git
 slack-desktop

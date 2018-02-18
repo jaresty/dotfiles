@@ -7,6 +7,7 @@ alsa-utils
 appstream-glib
 archlinux-keyring
 argon2
+asciidoc
 at-spi2-atk
 at-spi2-core
 atk
@@ -45,6 +46,8 @@ diff-so-fancy
 diffutils
 dmraid
 dnssec-anchors
+docbook-xml
+docbook-xsl
 dosfstools
 double-conversion
 dunst
@@ -52,6 +55,7 @@ e2fsprogs
 efivar
 expat
 fakeroot
+fasd
 ffmpeg
 fftw
 file
@@ -499,6 +503,7 @@ xorgproto
 xvidcore
 xz
 yajl
+yarn
 zita-alsa-pcmi
 zita-resampler
 zlib

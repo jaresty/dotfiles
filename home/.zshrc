@@ -1,4 +1,4 @@
-source $HOME/.antigen.zsh
+source /usr/share/zsh/share/antigen.zsh
 
 POWERLEVEL9K_MODE='awesome-fontconfig'
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
