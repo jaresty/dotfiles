@@ -5,6 +5,7 @@ git-duet
 google-chrome
 nerd-fonts-complete
 polybar-git
+slack-desktop
 st
 trizen
 ttf-iosevka-pack
