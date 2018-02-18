@@ -11,4 +11,5 @@ slack-desktop
 st
 trizen
 ttf-iosevka-pack
+universal-ctags-git
 zoom

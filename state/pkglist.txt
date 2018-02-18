@@ -116,6 +116,7 @@ iproute2
 iptables
 iputils
 jack
+jansson
 jasper
 jemalloc
 jfsutils
@@ -358,6 +359,7 @@ pulseaudio-alsa
 python
 python-appdirs
 python-colorama
+python-docutils
 python-greenlet
 python-packaging
 python-pip
