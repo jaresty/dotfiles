@@ -197,6 +197,8 @@ assign [class="(?i)firefox"] $w8
 assign [class="(?i)slack"] $w3
 assign [class="(?i)zoom"] $w4
 
+for_window [class="Spotify"] move to workspace $w9
+
 set $Locker i3lock -c 333333 -i ~/.wallpapers/*.png -f && sleep 1
 
 # Autolock/turn off screen
@@ -232,5 +234,8 @@ exec --no-startup-id xinput set-prop $touchpad "libinput Tapping Enabled" 1
 exec --no-startup-id xinput set-prop $touchpad "libinput Accel Speed" 1
 exec --no-startup-id xinput set-prop $touchpad "libinput Click Method Enabled" 0 1
 
-exec --no-startup-id parcellite
+exec --no-startup-id compton -b --backend glx --vsync opengl
+
 exec_always --no-startup-id "~/.config/i3/startup.sh"
+
+exec --no-startup-id parcellite

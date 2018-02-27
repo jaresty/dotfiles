@@ -29,6 +29,7 @@ cairo
 cantarell-fonts
 cmake
 colord
+compton
 confuse
 coreutils
 cracklib
@@ -88,6 +89,7 @@ gnupg
 gnutls
 go
 gpgme
+gpm
 gptfdisk
 graphite
 grep
@@ -146,6 +148,7 @@ libbytesize
 libcanberra
 libcap
 libcap-ng
+libconfig
 libcroco
 libcups
 libcurl-compat
@@ -291,6 +294,8 @@ netctl
 nettle
 nodejs
 noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
 npm
 npth
 nspr
@@ -384,6 +389,7 @@ rhash
 ripgrep
 rofi
 rtkit
+rtmpdump
 rust
 s-nail
 sdl2
@@ -392,6 +398,7 @@ semver
 shadow
 shared-mime-info
 snappy
+socat
 sound-theme-freedesktop
 speex
 speexdsp
@@ -422,9 +429,11 @@ vid.stab
 volume_key
 vulkan-icd-loader
 vulkan-intel
+w3m
 wayland
 wayland-protocols
 webrtc-audio-processing
+wget
 which
 wireless_tools
 wpa_supplicant

@@ -67,3 +67,6 @@ export DISPLAY=:0
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source /usr/share/chruby/chruby.sh
+

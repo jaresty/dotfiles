@@ -1,13 +1,17 @@
 alacritty-git
 antigen-git
 autorandr
+chruby
+dasht
 direnv
 git-duet
 google-chrome
 lastpass-cli-git
 nerd-fonts-complete
 polybar-git
+ruby-install
 slack-desktop
+spotify
 st
 trizen
 ttf-iosevka-pack

@@ -25,6 +25,7 @@ stow -R i3
 stow -R dunst
 stow -R alacritty
 stow -R rofi
+stow -R compton
 stow -R polybar
 
 mkdir -p ~/.config
