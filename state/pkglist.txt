@@ -413,6 +413,7 @@ stow
 sudo
 sysfsutils
 systemd
+systemd-swap
 systemd-sysvcompat
 tar
 tdb
