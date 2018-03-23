@@ -120,6 +120,8 @@ iputils
 jack
 jansson
 jasper
+java-environment-common
+java-runtime-common
 jemalloc
 jfsutils
 js
