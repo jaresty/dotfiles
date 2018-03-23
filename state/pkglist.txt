@@ -124,6 +124,7 @@ java-environment-common
 java-runtime-common
 jemalloc
 jfsutils
+jq
 js
 json-c
 json-glib
@@ -302,6 +303,7 @@ npm
 npth
 nspr
 nss
+oniguruma
 opencore-amr
 openjpeg2
 openresolv
