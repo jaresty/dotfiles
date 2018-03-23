@@ -291,6 +291,7 @@ mpfr
 msgpack-c
 mtdev
 nano
+ncdu
 ncurses
 neovim
 netctl
