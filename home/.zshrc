@@ -56,7 +56,6 @@ export PATH=$GOPATH/bin:$PATH
 # source $HOME/.cargo/env
 # export LD_LIBRARY_PATH=$(rustc --print sysroot)/lib
 
-source $HOME/.vim/scripts/base16-shell/scripts/base16-tomorrow-night.sh
 
 export SSOCA_ENVIRONMENT=bosh-cpi
 
