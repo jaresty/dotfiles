@@ -151,6 +151,7 @@ libbytesize
 libcanberra
 libcap
 libcap-ng
+libcloudproviders
 libconfig
 libcroco
 libcups

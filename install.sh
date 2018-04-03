@@ -22,6 +22,7 @@ fi
 stow -R home
 stow -R x11
 stow -R i3
+stow -R i3blocks
 stow -R dunst
 stow -R alacritty
 stow -R rofi

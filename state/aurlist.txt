@@ -11,7 +11,6 @@ jdk8
 kakoune-git
 lastpass-cli-git
 nerd-fonts-complete
-polybar-git
 ruby-install
 slack-desktop
 spotify
