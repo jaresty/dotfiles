@@ -420,6 +420,7 @@ tar
 tdb
 texinfo
 thin-provisioning-tools
+tig
 tldr
 tmux
 tree
