@@ -4,6 +4,7 @@ autorandr
 bosh-cli
 chruby
 dasht
+devdocs-desktop
 direnv
 git-duet
 google-chrome
