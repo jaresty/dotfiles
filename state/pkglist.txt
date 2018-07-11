@@ -4,6 +4,7 @@ adwaita-icon-theme
 alsa-lib
 alsa-plugins
 alsa-utils
+aom
 appstream-glib
 archlinux-keyring
 argon2
@@ -122,6 +123,7 @@ hspell
 htop
 http-parser
 hunspell
+hunspell-en_US
 hwids
 hyphen
 i3-gaps
@@ -357,7 +359,6 @@ parted
 patch
 pavucontrol
 pciutils
-pcmciautils
 pcre
 pcre2
 perl
