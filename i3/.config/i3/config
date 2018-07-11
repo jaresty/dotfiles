@@ -69,18 +69,25 @@ bindsym $mod+c focus child
 bindsym $mod+n workspace next
 bindsym $mod+p workspace prev
 
-bindsym $mod+x [urgent=latest] focus
+bindsym $mod+x move workspace to output right
+bindsym $mod+Shift+x [urgent=latest] focus
+
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
 
 set $w1 "1 "
 set $w2 "2 "
 set $w3 "3 "
-set $w4 "4 "
+set $w4 "4"
 set $w5 "5 "
 set $w6 "6"
 set $w7 "7"
 set $w8 "8 "
 set $w9 "9 "
-set $w10 "10 "
+set $w10 "10 "
 
 # switch to workspace
 bindsym $mod+1 workspace $w1
@@ -169,7 +176,7 @@ bindsym XF86AudioPrev exec playerctl previous
 assign [class="(?i)google-chrome"] $w2
 assign [class="(?i)firefox"] $w8
 assign [class="(?i)slack"] $w3
-assign [class="(?i)zoom"] $w4
+assign [class="(?i)zoom"] $w10
 
 for_window [class="Spotify"] move to workspace $w9
 
