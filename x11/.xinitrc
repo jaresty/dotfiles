@@ -8,7 +8,10 @@ eval $(ssh-agent)
 
 # autorandr -c
 
-exec /usr/bin/i3
+# exec /usr/bin/i3
+
+exec /usr/bin/xmonad
+
 # #!/bin/sh
 #
 # userresources=$HOME/.Xresources

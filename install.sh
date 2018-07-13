@@ -19,15 +19,16 @@ if ! which trizen; then
   popd
 fi
 
+stow -R alacritty
+stow -R compton
+stow -R dunst
 stow -R home
-stow -R x11
 stow -R i3
 stow -R i3blocks
-stow -R dunst
-stow -R alacritty
-stow -R rofi
-stow -R compton
 stow -R polybar
+stow -R rofi
+stow -R x11
+stow -R xmonad
 
 mkdir -p ~/.config
 
