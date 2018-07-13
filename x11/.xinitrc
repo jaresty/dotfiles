@@ -6,7 +6,7 @@
 # start ssh-agent
 eval $(ssh-agent)
 
-autorandr -c
+# autorandr -c
 
 exec /usr/bin/i3
 # #!/bin/sh
