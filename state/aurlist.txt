@@ -1,6 +1,5 @@
 alacritty-git
 antigen-git
-autorandr
 bosh-cli
 chruby
 dasht
