@@ -7,14 +7,13 @@ devdocs-desktop
 direnv
 git-duet
 google-chrome
+haskell-dbus0.10
 jdk8
 kakoune-git
 lastpass-cli-git
 nerd-fonts-complete
 pcmciautils
 ruby-install
-slack-desktop
-spotify
 st
 trizen
 ttf-iosevka-pack
