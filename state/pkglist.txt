@@ -488,6 +488,7 @@ python-html5lib
 python-idna
 python-lockfile
 python-msgpack
+python-neovim
 python-packaging
 python-pip
 python-progress
