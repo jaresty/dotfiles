@@ -23,9 +23,6 @@ stow -R alacritty
 stow -R compton
 stow -R dunst
 stow -R home
-stow -R i3
-stow -R i3blocks
-stow -R polybar
 stow -R rofi
 stow -R x11
 stow -R xmonad

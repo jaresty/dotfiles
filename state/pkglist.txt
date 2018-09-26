@@ -112,6 +112,7 @@ gptfdisk
 graphite
 grep
 groff
+grub
 gsettings-desktop-schemas
 gsm
 gst-plugins-base-libs
@@ -194,7 +195,6 @@ hunspell-en_US
 hwids
 hyphen
 i3-gaps
-i3blocks
 i3lock
 i3status
 iana-etc
@@ -488,7 +488,6 @@ python-html5lib
 python-idna
 python-lockfile
 python-msgpack
-python-neovim
 python-packaging
 python-pip
 python-progress
