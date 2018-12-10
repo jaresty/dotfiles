@@ -56,8 +56,7 @@ export PATH=$GOPATH/bin:$PATH
 # source $HOME/.cargo/env
 # export LD_LIBRARY_PATH=$(rustc --print sysroot)/lib
 
-
-export SSOCA_ENVIRONMENT=bosh-cpi
+export SSOCA_ENVIRONMENT=bosh
 
 eval "$(direnv hook zsh)"
 

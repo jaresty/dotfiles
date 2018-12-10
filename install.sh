@@ -12,10 +12,10 @@ clone() {
 
 sudo pacman -Syu --needed --noconfirm yajl git expac
 
-if ! which trizen; then
+if ! which yay; then
   pushd "$(mktemp -d)"
-    git clone https://aur.archlinux.org/trizen.git
-    (cd trizen && makepkg -i --noconfirm)
+    git clone https://aur.archlinux.org/yay.git
+    (cd yay && makepkg -i --noconfirm)
   popd
 fi
 
