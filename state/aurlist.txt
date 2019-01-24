@@ -8,12 +8,14 @@ devdocs-desktop
 direnv
 git-duet
 google-chrome
+google-cloud-sdk
 jdk8
 lastpass-cli-git
 nerd-fonts-complete
 ruby-install
 st
 trizen
-ttf-iosevka-pack
+ttf-iosevka-term
 universal-ctags-git
+yay
 zoom

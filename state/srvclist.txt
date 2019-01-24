@@ -1,1 +1,2 @@
 systemd-swap.service
+systemd-timesyncd.service
