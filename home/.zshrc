@@ -27,7 +27,6 @@ antigen bundle systemd
 antigen bundle yarn
 
 antigen bundle unixorn/warhol.plugin.zsh
-antigen bundle asuran/zsh-docker-machine
 
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
