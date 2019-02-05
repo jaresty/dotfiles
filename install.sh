@@ -29,7 +29,7 @@ stow -R xmonad
 
 mkdir -p ~/.config
 
-clone luan/vimfiles  .config/vim  || true
+clone luan/nvim  .config/vim  || true
 clone luan/tmuxfiles .config/tmux || true
 
 (cd $HOME/.config/tmux && ./install)
