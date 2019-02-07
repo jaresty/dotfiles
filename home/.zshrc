@@ -16,7 +16,6 @@ mkdir -p $ZSH_CACHE_DIR
 
 antigen bundle bundler
 antigen bundle compleat
-antigen bundle common-aliases
 antigen bundle docker
 antigen bundle fasd
 antigen bundle gpg-agent
@@ -43,7 +42,7 @@ export EDITOR='nvim'
 export GIT_EDITOR='nvim'
 
 export GIT_DUET_GLOBAL=true
-export GIT_DUET_ROTATE_AUTHOR=true
+export GIT_DUET_CO_AUTHORED_BY=true
 
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/bin:$PATH
@@ -67,3 +66,4 @@ export DISPLAY=:0
 
 source /usr/share/chruby/chruby.sh
 
+xset r rate 300 35

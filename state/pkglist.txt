@@ -20,6 +20,7 @@ autoconf
 automake
 autorandr
 avahi
+aws-cli
 bash
 bind-tools
 binutils
@@ -68,6 +69,7 @@ enchant
 expat
 fakeroot
 fasd
+fd
 ffmpeg
 fftw
 file
@@ -89,7 +91,7 @@ gdb
 gdb-common
 gdbm
 gdk-pixbuf2
-geoclue2
+geoclue
 geocode-glib
 geoip
 geoip-database
@@ -104,7 +106,6 @@ glib2
 glibc
 glibmm
 gmp
-gnu-netcat
 gnupg
 gnutls
 go
@@ -130,8 +131,10 @@ gzip
 harfbuzz
 harfbuzz-icu
 haskell-adjunctions
+haskell-aeson
 haskell-async
 haskell-attoparsec
+haskell-base-compat
 haskell-base-orphans
 haskell-bifunctors
 haskell-blaze-builder
@@ -151,6 +154,7 @@ haskell-data-default-instances-old-locale
 haskell-dbus
 haskell-distributive
 haskell-dlist
+haskell-erf
 haskell-exceptions
 haskell-extensible-exceptions
 haskell-free
@@ -173,11 +177,13 @@ haskell-parallel
 haskell-parsec-numbers
 haskell-primitive
 haskell-profunctors
+haskell-quickcheck
 haskell-random
 haskell-reflection
 haskell-regex-base
 haskell-regex-compat
 haskell-regex-posix
+haskell-regex-tdfa
 haskell-resourcet
 haskell-scientific
 haskell-semigroupoids
@@ -186,14 +192,17 @@ haskell-split
 haskell-statevar
 haskell-streaming-commons
 haskell-tagged
+haskell-tf-random
 haskell-th-abstraction
 haskell-th-lift
+haskell-time-locale-compat
 haskell-transformers-base
 haskell-transformers-compat
 haskell-typed-process
 haskell-unliftio-core
 haskell-unordered-containers
 haskell-utf8-string
+haskell-uuid-types
 haskell-vector
 haskell-vector-algorithms
 haskell-void
@@ -253,6 +262,7 @@ libatomic_ops
 libavc1394
 libblockdev
 libbluray
+libbsd
 libbytesize
 libcanberra
 libcanberra-pulse
@@ -423,6 +433,7 @@ nss
 nvidia
 nvidia-utils
 oniguruma
+openbsd-netcat
 opencore-amr
 openjpeg2
 openresolv
@@ -495,9 +506,11 @@ pyqt5-common
 python
 python-appdirs
 python-attrs
+python-botocore
 python-cachecontrol
 python-chardet
 python-colorama
+python-dateutil
 python-dbus
 python-dbus-common
 python-distlib
@@ -508,6 +521,7 @@ python-greenlet
 python-html5lib
 python-idna
 python-jinja
+python-jmespath
 python-lockfile
 python-markupsafe
 python-msgpack
@@ -515,6 +529,7 @@ python-packaging
 python-pep517
 python-pip
 python-progress
+python-pyasn1
 python-pygments
 python-pylast
 python-pyparsing
@@ -523,6 +538,8 @@ python-pyqt5
 python-pytoml
 python-requests
 python-retrying
+python-rsa
+python-s3transfer
 python-setuptools
 python-sip-pyqt5
 python-six
@@ -556,6 +573,7 @@ sed
 semver
 shadow
 shared-mime-info
+shellcheck
 snappy
 socat
 sound-theme-freedesktop
