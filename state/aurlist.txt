@@ -6,6 +6,7 @@ chruby
 dasht
 devdocs-desktop
 direnv
+gcc5
 git-duet
 google-chrome
 google-cloud-sdk

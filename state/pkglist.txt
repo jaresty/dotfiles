@@ -25,6 +25,7 @@ bash
 bind-tools
 binutils
 bison
+bridge-utils
 brotli
 btrfs-progs
 bzip2
@@ -39,6 +40,7 @@ cmake
 colord
 compton
 confuse
+containerd
 coreutils
 cracklib
 cryptsetup
@@ -58,6 +60,8 @@ dmraid
 dnssec-anchors
 docbook-xml
 docbook-xsl
+docker
+docker-compose
 dosfstools
 double-conversion
 dunst
@@ -75,6 +79,7 @@ fftw
 file
 filesystem
 findutils
+firefox
 flac
 flex
 fontconfig
@@ -404,14 +409,19 @@ lvm2
 lz4
 lzo
 m4
+mailcap
 make
 man-db
 man-pages
+mariadb
+mariadb-clients
+mariadb-libs
 mdadm
 mesa
 minizip
 mkinitcpio
 mkinitcpio-busybox
+mozilla-common
 mpfr
 msgpack-c
 mtdev
@@ -424,6 +434,7 @@ netctl
 nettle
 node-gyp
 nodejs
+noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 npm
@@ -496,6 +507,8 @@ pkcs11-helper
 pkgconf
 polkit
 popt
+postgresql
+postgresql-libs
 procps-ng
 protobuf
 psmisc
@@ -508,6 +521,7 @@ python-appdirs
 python-attrs
 python-botocore
 python-cachecontrol
+python-cached-property
 python-chardet
 python-colorama
 python-dateutil
@@ -515,6 +529,10 @@ python-dbus
 python-dbus-common
 python-distlib
 python-distro
+python-docker
+python-docker-pycreds
+python-dockerpty
+python-docopt
 python-docutils
 python-gobject
 python-greenlet
@@ -522,6 +540,7 @@ python-html5lib
 python-idna
 python-jinja
 python-jmespath
+python-jsonschema
 python-lockfile
 python-markupsafe
 python-msgpack
@@ -544,8 +563,10 @@ python-setuptools
 python-sip-pyqt5
 python-six
 python-termcolor
+python-texttable
 python-urllib3
 python-webencodings
+python-websocket-client
 python-yaml
 python2
 qt5-base
@@ -565,6 +586,7 @@ rhash
 ripgrep
 rofi
 rtkit
+runc
 rust
 s-nail
 scrot
