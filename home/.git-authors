@@ -8,6 +8,7 @@ authors:
   zg: Zachary Gershman
   ja: Joshua Aresty
   cd: Chris Dutra
+  mp: Max Peterson
 
 email:
   prefix: pair
@@ -22,5 +23,6 @@ email_addresses:
   zg: zgershman@pivotal.io
   ja: joshua.aresty@emc.com
   cd: cdutra@pivotal.io
+  mp: mpeterson@pivotal.io
 
 global: true
