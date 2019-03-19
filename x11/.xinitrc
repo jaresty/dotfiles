@@ -10,6 +10,10 @@ eval $(ssh-agent)
 
 # exec /usr/bin/i3
 
+dunst &
+flameshot &
+parcellite &
+
 exec /usr/bin/xmonad
 
 # #!/bin/sh
