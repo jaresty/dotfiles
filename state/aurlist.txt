@@ -6,6 +6,8 @@ chruby
 dasht
 devdocs-desktop
 direnv
+flameshot-git
+fwupdate
 gcc5
 git-duet
 google-chrome

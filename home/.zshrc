@@ -67,3 +67,4 @@ export DISPLAY=:0
 source /usr/share/chruby/chruby.sh
 
 xset r rate 300 35
+chruby 2.4.5

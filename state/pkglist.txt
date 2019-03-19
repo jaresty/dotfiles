@@ -1,5 +1,6 @@
 acl
 acpi
+adobe-source-code-pro-fonts
 adwaita-icon-theme
 alsa-lib
 alsa-plugins
@@ -22,12 +23,14 @@ autorandr
 avahi
 aws-cli
 bash
+bash-completion
 bind-tools
 binutils
 bison
 bridge-utils
 brotli
 btrfs-progs
+bubblewrap
 bzip2
 c-ares
 ca-certificates
@@ -36,6 +39,7 @@ ca-certificates-utils
 cairo
 cairomm
 cantarell-fonts
+cdparanoia
 cmake
 colord
 compton
@@ -44,6 +48,7 @@ containerd
 coreutils
 cracklib
 cryptsetup
+cscope
 curl
 db
 dbus
@@ -81,12 +86,14 @@ filesystem
 findutils
 firefox
 flac
+flatpak
 flex
 fontconfig
 freetype2
 fribidi
+fuse-common
+fuse2
 fwupd
-fwupdate
 gawk
 gc
 gcab
@@ -118,12 +125,14 @@ gobject-introspection-runtime
 gpgme
 gpm
 gptfdisk
+graphene
 graphite
 grep
 groff
 grub
 gsettings-desktop-schemas
 gsm
+gst-plugins-base
 gst-plugins-base-libs
 gstreamer
 gtk-update-icon-cache
@@ -232,6 +241,7 @@ idnkit
 ifenslave
 imlib2
 inetutils
+intltool
 iproute2
 iptables
 iputils
@@ -338,7 +348,6 @@ libsoxr
 libssh
 libssh2
 libstemmer
-libsystemd
 libtasn1
 libtermkey
 libthai
@@ -354,6 +363,7 @@ libutil-linux
 libuv
 libva
 libvdpau
+libvisual
 libvoikko
 libvorbis
 libvpx
@@ -425,6 +435,7 @@ mozilla-common
 mpfr
 msgpack-c
 mtdev
+mtr
 nano
 ncdu
 ncurses
@@ -447,13 +458,13 @@ oniguruma
 openbsd-netcat
 opencore-amr
 openjpeg2
-openresolv
 openssh
 openssl
 openssl-1.0
 openvpn
 opus
 orc
+ostree
 p11-kit
 pacman
 pacman-contrib
@@ -501,7 +512,9 @@ perl-timedate
 perl-try-tiny
 perl-uri
 perl-www-robotrules
+perl-xml-parser
 pinentry
+pipewire
 pixman
 pkcs11-helper
 pkgconf
@@ -516,6 +529,7 @@ pulseaudio
 pulseaudio-alsa
 pygobject-devel
 pyqt5-common
+pyqtwebengine-common
 python
 python-appdirs
 python-attrs
@@ -554,6 +568,7 @@ python-pylast
 python-pyparsing
 python-pypeg2
 python-pyqt5
+python-pyqtwebengine
 python-pytoml
 python-requests
 python-retrying
@@ -574,8 +589,10 @@ qt5-declarative
 qt5-location
 qt5-quickcontrols2
 qt5-svg
+qt5-tools
 qt5-webchannel
 qt5-webengine
+qt5-x11extras
 qt5-xmlpatterns
 qutebrowser
 re2
@@ -585,11 +602,14 @@ rest
 rhash
 ripgrep
 rofi
+rsync
 rtkit
 runc
-rust
+rustup
 s-nail
+sbc
 scrot
+sdl
 sdl2
 sed
 semver
@@ -608,6 +628,8 @@ strace
 sudo
 sysfsutils
 systemd
+systemd-libs
+systemd-resolvconf
 systemd-swap
 systemd-sysvcompat
 tar
@@ -629,6 +651,8 @@ util-linux
 v4l-utils
 vi
 vid.stab
+virtualbox
+virtualbox-host-modules-arch
 volume_key
 vulkan-icd-loader
 vulkan-intel
@@ -654,6 +678,9 @@ xcb-util-renderutil
 xcb-util-wm
 xcb-util-xrm
 xclip
+xdg-dbus-proxy
+xdg-desktop-portal
+xdg-desktop-portal-gtk
 xdg-utils
 xdotool
 xf86-input-libinput
@@ -674,7 +701,6 @@ xorg-fonts-encodings
 xorg-fonts-misc
 xorg-iceauth
 xorg-luit
-xorg-mkfontdir
 xorg-mkfontscale
 xorg-server
 xorg-server-common
@@ -720,6 +746,7 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xorgproto
+xsel
 xvidcore
 xz
 yajl
