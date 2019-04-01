@@ -3,6 +3,7 @@ alacritty-terminfo-git
 antigen-git
 bosh-cli
 chruby
+cloudfoundry-cli
 dasht
 devdocs-desktop
 direnv
@@ -15,6 +16,7 @@ google-cloud-sdk
 jdk8
 lastpass-cli-git
 nerd-fonts-complete
+ngrok
 ruby-install
 st
 trizen
