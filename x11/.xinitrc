@@ -13,8 +13,11 @@ eval $(ssh-agent)
 dunst &
 flameshot &
 parcellite &
+compton &
+~/bin/set-bg
 
 exec /usr/bin/xmonad
+# exec /usr/bin/awesome
 
 # #!/bin/sh
 #
