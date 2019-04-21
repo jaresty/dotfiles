@@ -14,6 +14,8 @@ dunst &
 flameshot &
 parcellite &
 compton &
+
+xrandr --output DP-2 --primary --auto --rotate normal --output DP-0 --right-of DP-2 --rotate right
 ~/bin/set-bg
 
 exec /usr/bin/xmonad

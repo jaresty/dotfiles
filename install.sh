@@ -26,6 +26,7 @@ stow -R home
 stow -R rofi
 stow -R x11
 stow -R xmonad
+stow -R xmobar
 
 mkdir -p ~/.config
 
