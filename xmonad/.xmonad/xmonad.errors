@@ -6,10 +6,10 @@ xmonad.hs:11:13: warning: [-Wdeprecations]
 11 | myLayouts = smartSpacing 5 $ Dwindle R CW 1.5 1.1
    |             ^^^^^^^^^^^^
 
-xmonad.hs:17:22: warning: [-Wdeprecations]
+xmonad.hs:18:22: warning: [-Wdeprecations]
     In the use of ‘defaultConfig’
     (imported from XMonad, but defined in XMonad.Config):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
    |
-17 |   xmonad =<< xmobar (defaultConfig
+18 |   xmonad =<< xmobar (defaultConfig
    |                      ^^^^^^^^^^^^^

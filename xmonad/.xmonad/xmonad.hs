@@ -14,19 +14,20 @@ myLayouts = smartSpacing 5 $ Dwindle R CW 1.5 1.1
 
 main = do
   xmproc <- spawnPipe "xmobar ~/.xmobar/xmobar-single.hs"
+  compton <- spawnPipe "compton --config ~/.config/compton.conf"
   xmonad =<< xmobar (defaultConfig
     { terminal = myTerminal
     , modMask = myModMask
     , borderWidth = myBorderWidth
     , layoutHook = smartBorders $ myLayouts
-    , logHook = fadeInactiveLogHook 0.7
+    , logHook = fadeInactiveLogHook 0.6
     , focusedBorderColor = background
     , normalBorderColor = color8
     })
 
 myTerminal = "alacritty"
 myModMask = mod4Mask
-myBorderWidth = 3
+myBorderWidth = 0
 background= "#232323"
 color8= "#676767"
 -- Color of current window title in xmobar.
