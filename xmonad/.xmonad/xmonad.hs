@@ -19,23 +19,22 @@ myKeys = [ ("M-p", spawn "rofi -show run")
   , ("M-S-4", spawn "flameshot gui")
  ]
 
-myConfig xmobarPipe =
-  defaultConfig
-    { terminal = myTerminal
-    , modMask = myModMask
-    , borderWidth = myBorderWidth
-    , layoutHook = smartBorders $ myLayouts
-    , logHook = fadeInactiveLogHook 0.6
-    , focusedBorderColor = background
-    , normalBorderColor = color8
-    } `additionalKeysP` myKeys
+myPP = xmobarPP { ppCurrent = xmobarColor "#429942" "" . wrap "[" "]" }
+toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
+myConfig = defaultConfig
+  { terminal = myTerminal
+  , modMask = myModMask
+  , borderWidth = myBorderWidth
+  , layoutHook = smartBorders $ myLayouts
+  , logHook =  fadeInactiveLogHook 0.8
+  , focusedBorderColor = background
+  , normalBorderColor = color8
+  } `additionalKeysP` myKeys
 
 main = do
-  replace
   compton <- spawnPipe "compton --config ~/.config/compton.conf"
-  greenclip <- spawnPipe "greenclip &"
-  xmobarPipe <- spawnPipe "xmobar"
-  xmonad $ myConfig xmobarPipe
+  greenclip <- spawnPipe "greenclip"
+  xmonad =<< statusBar "xmobar" myPP toggleStrutsKey myConfig
 
 myTerminal = "alacritty"
 myModMask = mod4Mask
@@ -47,3 +46,5 @@ xmobarTitleColor = "#FFB6B0"
 
 -- Color of current workspace in xmobar.
 xmobarCurrentWorkspaceColor = "#CEFFAC"
+themeBackground = "#3c3b37"
+themeHighlight  = "#f07746"
