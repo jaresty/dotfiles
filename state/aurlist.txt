@@ -13,10 +13,13 @@ gcc5
 git-duet
 google-chrome
 google-cloud-sdk
+idnkit
 jdk8
 lastpass-cli-git
 nerd-fonts-complete
 ngrok
+pomo
+rofi-greenclip
 ruby-install
 st
 trizen

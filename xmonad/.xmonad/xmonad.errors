@@ -1,15 +1,15 @@
 
-xmonad.hs:11:13: warning: [-Wdeprecations]
+xmonad.hs:14:13: warning: [-Wdeprecations]
     In the use of ‘smartSpacing’ (imported from XMonad.Layout.Spacing):
     Deprecated: "Use spacingRaw instead."
    |
-11 | myLayouts = smartSpacing 5 $ Dwindle R CW 1.5 1.1
+14 | myLayouts = smartSpacing 5 $ Dwindle R CW 1.5 1.1
    |             ^^^^^^^^^^^^
 
-xmonad.hs:18:22: warning: [-Wdeprecations]
+xmonad.hs:23:3: warning: [-Wdeprecations]
     In the use of ‘defaultConfig’
     (imported from XMonad, but defined in XMonad.Config):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
    |
-18 |   xmonad =<< xmobar (defaultConfig
-   |                      ^^^^^^^^^^^^^
+23 |   defaultConfig
+   |   ^^^^^^^^^^^^^
