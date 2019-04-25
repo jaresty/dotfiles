@@ -33,7 +33,7 @@ myConfig = defaultConfig
 
 main = do
   compton <- spawnPipe "compton --config ~/.config/compton.conf"
-  greenclip <- spawnPipe "greenclip"
+  greenclip <- spawnPipe "greenclip daemon"
   xmonad =<< statusBar "xmobar" myPP toggleStrutsKey myConfig
 
 myTerminal = "alacritty"
