@@ -106,6 +106,7 @@ gc
 gcab
 gcc
 gcc-libs
+gd
 gdb
 gdb-common
 gdbm
@@ -117,6 +118,7 @@ geoip-database
 gettext
 ghc
 ghc-libs
+ghostscript
 giblib
 giflib
 git
@@ -136,10 +138,12 @@ gpm
 gptfdisk
 graphene
 graphite
+graphviz
 grep
 groff
 grub
 gsettings-desktop-schemas
+gsfonts
 gsl
 gsm
 gst-plugins-base
@@ -151,6 +155,7 @@ gtk3
 gtkmm
 gtkmm3
 gtkspell
+gts
 guile
 guile2.0
 gzip
@@ -250,6 +255,7 @@ i3status
 iana-etc
 icu
 ifenslave
+ijs
 ilmbase
 imlib2
 inetutils
@@ -264,6 +270,7 @@ jansson
 jasper
 java-environment-common
 java-runtime-common
+jbig2dec
 jemalloc
 jfsutils
 jq
@@ -378,6 +385,7 @@ libnotify
 libnsl
 libogg
 libomxil-bellagio
+libpaper
 libpcap
 libpciaccess
 libpipeline
@@ -609,6 +617,7 @@ python-bcrypt
 python-botocore
 python-cachecontrol
 python-cached-property
+python-cairo
 python-cffi
 python-chardet
 python-colorama
@@ -709,6 +718,7 @@ rsync
 rtkit
 ruby
 rubygems
+run-parts
 runc
 rustup
 s-nail
@@ -793,6 +803,7 @@ xdg-dbus-proxy
 xdg-desktop-portal
 xdg-desktop-portal-gtk
 xdg-utils
+xdot
 xdotool
 xf86-input-libinput
 xf86-input-wacom
