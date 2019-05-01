@@ -1,15 +1,23 @@
 
-xmonad.hs:18:13: warning: [-Wdeprecations]
+xmonad.hs:24:13: warning: [-Wdeprecations]
     In the use of ‘smartSpacing’ (imported from XMonad.Layout.Spacing):
     Deprecated: "Use spacingRaw instead."
    |
-18 | myLayouts = smartSpacing 5 $ Dwindle R CW 1.5 1.1
+24 | myLayouts = smartSpacing 5 $ Dwindle R CW 1.5 1.1
    |             ^^^^^^^^^^^^
 
-xmonad.hs:33:12: warning: [-Wdeprecations]
+xmonad.hs:41:12: warning: [-Wdeprecations]
     In the use of ‘defaultConfig’
     (imported from XMonad, but defined in XMonad.Config):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
    |
-33 | myConfig = defaultConfig
+41 | myConfig = defaultConfig
    |            ^^^^^^^^^^^^^
+
+xmonad.hs:49:71: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+   |
+49 |   , manageHook = namedScratchpadManageHook scratchpads <+> manageHook defaultConfig
+   |                                                                       ^^^^^^^^^^^^^

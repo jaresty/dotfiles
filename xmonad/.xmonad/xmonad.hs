@@ -12,8 +12,14 @@ import XMonad.Util.EZConfig ( additionalKeysP )
 import XMonad.Util.Replace
 import XMonad.Actions.DynamicWorkspaces
 import XMonad.Prompt (def)
+import XMonad.Util.NamedScratchpad
 import qualified XMonad.StackSet as W
 import qualified Data.Map as M
+
+scratchpads = [
+  NS "devdocs-desktop" "devdocs-desktop" (className =? "devdocs") defaultFloating,
+  NS "htop" "alacritty -e htop" (title =? "htop") defaultFloating
+ ]
 
 myLayouts = smartSpacing 5 $ Dwindle R CW 1.5 1.1
             ||| Full
@@ -26,6 +32,8 @@ myKeys = [ ("M-p", spawn "rofi -show run")
   , ("M-m", withWorkspace def (windows . W.shift))
   , ("M-S-r", renameWorkspace def)
   , ("M-0", toggleWS)
+  , ("M-d", namedScratchpadAction scratchpads "devdocs-desktop")
+  , ("M-t", namedScratchpadAction scratchpads "htop")
  ]
 
 myPP = xmobarPP { ppCurrent = xmobarColor "#429942" "" . wrap "[" "]" }
@@ -38,6 +46,7 @@ myConfig = defaultConfig
   , logHook =  fadeInactiveLogHook 0.8
   , focusedBorderColor = background
   , normalBorderColor = color8
+  , manageHook = namedScratchpadManageHook scratchpads <+> manageHook defaultConfig
   } `additionalKeysP` myKeys
 
 main = do
