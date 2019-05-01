@@ -6,9 +6,13 @@ import XMonad.Layout.Dwindle
 import XMonad.Layout.NoBorders (smartBorders)
 import XMonad.Hooks.FadeInactive (fadeInactiveLogHook)
 import XMonad.Layout.Spacing (smartSpacing)
+import XMonad.Actions.CycleWS (toggleWS)
 import XMonad.Util.Run
 import XMonad.Util.EZConfig ( additionalKeysP )
 import XMonad.Util.Replace
+import XMonad.Actions.DynamicWorkspaces
+import XMonad.Prompt (def)
+import qualified XMonad.StackSet as W
 import qualified Data.Map as M
 
 myLayouts = smartSpacing 5 $ Dwindle R CW 1.5 1.1
@@ -17,6 +21,11 @@ myLayouts = smartSpacing 5 $ Dwindle R CW 1.5 1.1
 myKeys = [ ("M-p", spawn "rofi -show run")
   , ("M1-C-h", spawn "rofi -modi \"clipboard:greenclip print\" -show clipboard -run-command '{cmd}'")
   , ("M-S-4", spawn "flameshot gui")
+  , ("M-S-<Backspace>", removeWorkspace)
+  , ("M-S-v", selectWorkspace def)
+  , ("M-m", withWorkspace def (windows . W.shift))
+  , ("M-S-r", renameWorkspace def)
+  , ("M-0", toggleWS)
  ]
 
 myPP = xmobarPP { ppCurrent = xmobarColor "#429942" "" . wrap "[" "]" }
