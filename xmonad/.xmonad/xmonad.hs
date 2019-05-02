@@ -13,12 +13,15 @@ import XMonad.Util.Replace
 import XMonad.Actions.DynamicWorkspaces
 import XMonad.Prompt (def)
 import XMonad.Util.NamedScratchpad
+import Data.Ratio
+import Data.List
+import XMonad.Hooks.ManageHelpers (doRectFloat)
 import qualified XMonad.StackSet as W
 import qualified Data.Map as M
 
 scratchpads = [
-  NS "devdocs-desktop" "devdocs-desktop" (className =? "devdocs") defaultFloating,
-  NS "htop" "alacritty -e htop" (title =? "htop") defaultFloating
+  NS "devdocs-desktop" "devdocs-desktop" (title =? "DevDocs") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
+  , NS "zoom" "zoom" (fmap ("195-604-777" `isInfixOf`) title) (customFloating (W.RationalRect (5/6) (5/6) (1/6) (1/6)))
  ]
 
 myLayouts = smartSpacing 5 $ Dwindle R CW 1.5 1.1
@@ -33,11 +36,16 @@ myKeys = [ ("M-p", spawn "rofi -show run")
   , ("M-S-r", renameWorkspace def)
   , ("M-0", toggleWS)
   , ("M-d", namedScratchpadAction scratchpads "devdocs-desktop")
-  , ("M-t", namedScratchpadAction scratchpads "htop")
+  , ("M-z", namedScratchpadAction scratchpads "zoom")
  ]
 
 myPP = xmobarPP { ppCurrent = xmobarColor "#429942" "" . wrap "[" "]" }
 toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
+myManageHook = composeAll
+ [
+   (fmap ("195-604-777" `isInfixOf`) title) --> doFloat
+ ]
+
 myConfig = defaultConfig
   { terminal = myTerminal
   , modMask = myModMask
@@ -46,7 +54,7 @@ myConfig = defaultConfig
   , logHook =  fadeInactiveLogHook 0.8
   , focusedBorderColor = background
   , normalBorderColor = color8
-  , manageHook = namedScratchpadManageHook scratchpads <+> manageHook defaultConfig
+  , manageHook = myManageHook <+> namedScratchpadManageHook scratchpads <+> manageHook def
   } `additionalKeysP` myKeys
 
 main = do
