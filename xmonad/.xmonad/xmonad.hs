@@ -21,7 +21,7 @@ import qualified Data.Map as M
 
 scratchpads = [
   NS "devdocs-desktop" "devdocs-desktop" (title =? "DevDocs") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
-  , NS "zoom" "zoom" (fmap ("195-604-777" `isInfixOf`) title) (customFloating (W.RationalRect (5/6) (5/6) (1/6) (1/6)))
+  , NS "zoom" "zoom" (className =? "zoom") (customFloating (W.RationalRect (5/6) (5/6) (1/6) (1/6)))
  ]
 
 myLayouts = smartSpacing 5 $ Dwindle R CW 1.5 1.1
@@ -32,7 +32,7 @@ myKeys = [ ("M-p", spawn "rofi -show run")
   , ("M-S-4", spawn "flameshot gui")
   , ("M-S-<Backspace>", removeWorkspace)
   , ("M-S-v", selectWorkspace def)
-  , ("M-m", withWorkspace def (windows . W.shift))
+  , ("M-S-m", withWorkspace def (windows . W.shift))
   , ("M-S-r", renameWorkspace def)
   , ("M-0", toggleWS)
   , ("M-d", namedScratchpadAction scratchpads "devdocs-desktop")
@@ -43,7 +43,7 @@ myPP = xmobarPP { ppCurrent = xmobarColor "#429942" "" . wrap "[" "]" }
 toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
 myManageHook = composeAll
  [
-   (fmap ("195-604-777" `isInfixOf`) title) --> doFloat
+   (className =? "zoom") --> (customFloating (W.RationalRect (5/6) (1/12) (1/6) (2/6)))
  ]
 
 myConfig = defaultConfig
