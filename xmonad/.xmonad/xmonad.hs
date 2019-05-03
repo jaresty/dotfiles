@@ -21,7 +21,7 @@ import qualified Data.Map as M
 
 scratchpads = [
   NS "devdocs-desktop" "devdocs-desktop" (title =? "DevDocs") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
-  , NS "zoom" "zoom" (className =? "zoom") (customFloating (W.RationalRect (5/6) (5/6) (1/6) (1/6)))
+  , NS "zoom" "zoom" (fmap ("Zoom Meeting ID" `isInfixOf`) title) (customFloating (W.RationalRect (5/6) (5/6) (1/6) (1/6)))
  ]
 
 myLayouts = smartSpacing 5 $ Dwindle R CW 1.5 1.1
