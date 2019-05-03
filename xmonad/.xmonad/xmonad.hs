@@ -22,6 +22,9 @@ import qualified Data.Map as M
 scratchpads = [
   NS "devdocs-desktop" "devdocs-desktop" (title =? "DevDocs") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "zoom" "zoom" (fmap ("Zoom Meeting ID" `isInfixOf`) title) (customFloating (W.RationalRect (5/6) (5/6) (1/6) (1/6)))
+  , NS "tracker" "start-tracker" (appName =? "pivotaltracker.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
+  , NS "cloudfoundry-slack" "start-cloudfoundry-slack" (appName =? "cloudfoundry.slack.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
+  , NS "pivotal-slack" "start-pivotal-slack" (appName =? "pivotal.slack.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
  ]
 
 myLayouts = smartSpacing 5 $ Dwindle R CW 1.5 1.1
@@ -37,13 +40,17 @@ myKeys = [ ("M-p", spawn "rofi -show run")
   , ("M-0", toggleWS)
   , ("M-d", namedScratchpadAction scratchpads "devdocs-desktop")
   , ("M-z", namedScratchpadAction scratchpads "zoom")
+  , ("M-t", namedScratchpadAction scratchpads "tracker")
+  , ("M-c", namedScratchpadAction scratchpads "cloudfoundry-slack")
+  , ("M-s", namedScratchpadAction scratchpads "pivotal-slack")
  ]
 
 myPP = xmobarPP { ppCurrent = xmobarColor "#429942" "" . wrap "[" "]" }
-toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
+toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_a)
 myManageHook = composeAll
  [
    (className =? "zoom") --> (customFloating (W.RationalRect (5/6) (1/12) (1/6) (2/6)))
+   -- (className =? "pivotaltracker.com") --> (customFloating (W.RationalRect (5/6) (1/12) (1/6) (2/6)))
  ]
 
 myConfig = defaultConfig
