@@ -1,1 +1,1 @@
-google-chrome-stable --profile-directory='Profile 1' --app="https://cloudfoundry.slack.com/"
+google-chrome-stable --profile-directory='Profile 1' --disable-extensions --app="https://cloudfoundry.slack.com/"

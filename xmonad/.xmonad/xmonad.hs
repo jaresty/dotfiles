@@ -27,6 +27,7 @@ scratchpads = [
   , NS "pivotal-slack" "start-pivotal-slack" (appName =? "pivotal.slack.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "google-keep" "start-google-keep" (appName =? "keep.google.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "google-docs" "start-google-docs" (appName =? "docs.google.com") nonFloating
+  , NS "miro" "start-miro" (appName =? "miro.com") nonFloating
   , NS "qutebrowser" "qutebrowser" (appName =? "qutebrowser") nonFloating
  ]
 
@@ -41,14 +42,17 @@ myKeys = [ ("M-p", spawn "rofi -show run")
   , ("M-S-m", withWorkspace def (windows . W.shift))
   , ("M-S-r", renameWorkspace def)
   , ("M-0", toggleWS)
-  , ("M-d", namedScratchpadAction scratchpads "devdocs-desktop")
-  , ("M-z", namedScratchpadAction scratchpads "zoom")
-  , ("M-S-t", namedScratchpadAction scratchpads "tracker")
-  , ("M-s", namedScratchpadAction scratchpads "cloudfoundry-slack")
-  , ("M-S-s", namedScratchpadAction scratchpads "pivotal-slack")
-  , ("M-b", namedScratchpadAction scratchpads "qutebrowser")
-  , ("M-n", namedScratchpadAction scratchpads "google-keep")
-  , ("M-S-d", namedScratchpadAction scratchpads "google-docs")
+
+  , ("M1-d", namedScratchpadAction scratchpads "devdocs-desktop")
+  , ("M1-z", namedScratchpadAction scratchpads "zoom")
+  , ("M1-t", namedScratchpadAction scratchpads "tracker")
+  , ("M1-s", namedScratchpadAction scratchpads "cloudfoundry-slack")
+  , ("M1-S-s", namedScratchpadAction scratchpads "pivotal-slack")
+  , ("M1-b", namedScratchpadAction scratchpads "qutebrowser")
+  , ("M1-k", namedScratchpadAction scratchpads "google-keep")
+  , ("M1-S-d", namedScratchpadAction scratchpads "google-docs")
+  , ("M1-m", namedScratchpadAction scratchpads "miro")
+
   , ("M-<Down>", nextWS)
   , ("M-<Up>", prevWS)
   , ("M-S-<Down>", shiftToNext >> nextWS)
