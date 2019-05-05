@@ -6,7 +6,7 @@ import XMonad.Layout.Dwindle
 import XMonad.Layout.NoBorders (smartBorders)
 import XMonad.Hooks.FadeInactive (fadeInactiveLogHook)
 import XMonad.Layout.Spacing (smartSpacing)
-import XMonad.Actions.CycleWS (toggleWS)
+import XMonad.Actions.CycleWS
 import XMonad.Util.Run
 import XMonad.Util.EZConfig ( additionalKeysP )
 import XMonad.Util.Replace
@@ -25,6 +25,9 @@ scratchpads = [
   , NS "tracker" "start-tracker" (appName =? "pivotaltracker.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "cloudfoundry-slack" "start-cloudfoundry-slack" (appName =? "cloudfoundry.slack.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "pivotal-slack" "start-pivotal-slack" (appName =? "pivotal.slack.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
+  , NS "google-keep" "start-google-keep" (appName =? "keep.google.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
+  , NS "google-docs" "start-google-docs" (appName =? "docs.google.com") nonFloating
+  , NS "qutebrowser" "qutebrowser" (appName =? "qutebrowser") nonFloating
  ]
 
 myLayouts = smartSpacing 5 $ Dwindle R CW 1.5 1.1
@@ -40,9 +43,20 @@ myKeys = [ ("M-p", spawn "rofi -show run")
   , ("M-0", toggleWS)
   , ("M-d", namedScratchpadAction scratchpads "devdocs-desktop")
   , ("M-z", namedScratchpadAction scratchpads "zoom")
-  , ("M-t", namedScratchpadAction scratchpads "tracker")
-  , ("M-c", namedScratchpadAction scratchpads "cloudfoundry-slack")
-  , ("M-s", namedScratchpadAction scratchpads "pivotal-slack")
+  , ("M-S-t", namedScratchpadAction scratchpads "tracker")
+  , ("M-s", namedScratchpadAction scratchpads "cloudfoundry-slack")
+  , ("M-S-s", namedScratchpadAction scratchpads "pivotal-slack")
+  , ("M-b", namedScratchpadAction scratchpads "qutebrowser")
+  , ("M-n", namedScratchpadAction scratchpads "google-keep")
+  , ("M-S-d", namedScratchpadAction scratchpads "google-docs")
+  , ("M-<Down>", nextWS)
+  , ("M-<Up>", prevWS)
+  , ("M-S-<Down>", shiftToNext >> nextWS)
+  , ("M-S-<Up>", shiftToPrev >> prevWS)
+  , ("M-<Right>", nextScreen)
+  , ("M-<Left>", prevScreen)
+  , ("M-S-<Right>", shiftNextScreen)
+  , ("M-S-<Left>", shiftPrevScreen)
  ]
 
 myPP = xmobarPP { ppCurrent = xmobarColor "#429942" "" . wrap "[" "]" }
