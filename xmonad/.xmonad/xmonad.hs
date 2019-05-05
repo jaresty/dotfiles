@@ -28,6 +28,7 @@ scratchpads = [
   , NS "google-keep" "start-google-keep" (appName =? "keep.google.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "google-docs" "start-google-docs" (appName =? "docs.google.com") nonFloating
   , NS "miro" "start-miro" (appName =? "miro.com") nonFloating
+  , NS "music" "start-music" (appName =? "music.youtube.com__watch") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "qutebrowser" "qutebrowser" (appName =? "qutebrowser") nonFloating
  ]
 
@@ -52,6 +53,7 @@ myKeys = [ ("M-p", spawn "rofi -show run")
   , ("M1-k", namedScratchpadAction scratchpads "google-keep")
   , ("M1-S-d", namedScratchpadAction scratchpads "google-docs")
   , ("M1-m", namedScratchpadAction scratchpads "miro")
+  , ("M1-S-m", namedScratchpadAction scratchpads "music")
 
   , ("M-<Down>", nextWS)
   , ("M-<Up>", prevWS)

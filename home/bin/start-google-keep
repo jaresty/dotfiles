@@ -1,0 +1,1 @@
+google-chrome-stable --profile-directory='Profile 1' --disable-extensions --app='https://keep.google.com/'
