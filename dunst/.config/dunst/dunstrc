@@ -1,5 +1,5 @@
 [global]
-font = Iosevka Term 13
+font = Iosevka Term 10
 
 # Allow a small subset of html markup:
 #   <b>bold</b>
@@ -142,10 +142,10 @@ separator_color = frame
 startup_notification = false
 
 # dmenu path.
-dmenu = /usr/bin/dmenu -p dunst:
+dmenu = /usr/bin/rofi -dmenu -p dunst
 
 # Browser for opening urls in context menu.
-browser = google-chrome-stable
+browser = xdg-open
 
 # Align icons left/right/off
 icon_position = off
@@ -170,12 +170,12 @@ color = "#8EC07C"
 close = ctrl+space
 
 # Close all notifications.
-close_all = ctrl+shift+space
+# close_all = ctrl+shift+mod1+space
 
 # Redisplay last message(s).
 # On the US keyboard layout "grave" is normally above TAB and left
 # of "1".
-history = ctrl+grave
+history = ctrl+shift+space
 
 # Context menu.
 context = ctrl+shift+period
@@ -254,7 +254,4 @@ timeout = 8
 #    urgency = normal
 #
 
-[i3blocks]
-  summary = "*"
-  script = /home/luan/.config/dunst/notify
 # vim: ft=cfg
