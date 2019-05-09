@@ -87,6 +87,8 @@ myConfig = defaultConfig
 main = do
   compton <- spawnPipe "compton --config ~/.config/compton.conf"
   greenclip <- spawnPipe "greenclip daemon"
+  dunst <- spawnPipe "dunst"
+  flameshot <- spawnPipe "flameshot"
   xmonad =<< statusBar "xmobar" myPP toggleStrutsKey myConfig
 
 myTerminal = "alacritty"
