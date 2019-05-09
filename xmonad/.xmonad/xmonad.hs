@@ -21,12 +21,13 @@ import qualified Data.Map as M
 
 scratchpads = [
   NS "devdocs-desktop" "devdocs-desktop" (title =? "DevDocs") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
-  , NS "zoom" "zoom" (fmap ("Zoom Meeting ID" `isInfixOf`) title) (customFloating (W.RationalRect (5/6) (5/6) (1/6) (1/6)))
+  , NS "zoom" "zoom" (fmap ("Zoom Meeting ID" `isInfixOf`) title) (customFloating (W.RationalRect (5/6) (5/6) (1/12) (1/6)))
   , NS "tracker" "start-tracker" (appName =? "pivotaltracker.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "cloudfoundry-slack" "start-cloudfoundry-slack" (appName =? "cloudfoundry.slack.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "pivotal-slack" "start-pivotal-slack" (appName =? "pivotal.slack.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "google-keep" "start-google-keep" (appName =? "keep.google.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "google-docs" "start-google-docs" (appName =? "docs.google.com") nonFloating
+  , NS "concourse" "start-concourse" (appName =? "main.bosh-ci.cf-app.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "miro" "start-miro" (appName =? "miro.com") nonFloating
   , NS "music" "start-music" (appName =? "music.youtube.com__watch") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "qutebrowser" "qutebrowser" (appName =? "qutebrowser") nonFloating
@@ -46,11 +47,12 @@ myKeys = [ ("M-p", spawn "rofi -show run")
 
   , ("M1-d", namedScratchpadAction scratchpads "devdocs-desktop")
   , ("M1-z", namedScratchpadAction scratchpads "zoom")
+  , ("M1-c", namedScratchpadAction scratchpads "concourse")
   , ("M1-t", namedScratchpadAction scratchpads "tracker")
   , ("M1-s", namedScratchpadAction scratchpads "cloudfoundry-slack")
   , ("M1-S-s", namedScratchpadAction scratchpads "pivotal-slack")
-  , ("M1-b", namedScratchpadAction scratchpads "qutebrowser")
-  , ("M1-k", namedScratchpadAction scratchpads "google-keep")
+  , ("M1-S-b", namedScratchpadAction scratchpads "qutebrowser")
+  , ("M1-S-k", namedScratchpadAction scratchpads "google-keep")
   , ("M1-S-d", namedScratchpadAction scratchpads "google-docs")
   , ("M1-m", namedScratchpadAction scratchpads "miro")
   , ("M1-S-m", namedScratchpadAction scratchpads "music")
@@ -69,7 +71,7 @@ myPP = xmobarPP { ppCurrent = xmobarColor "#429942" "" . wrap "[" "]" }
 toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_a)
 myManageHook = composeAll
  [
-   (className =? "zoom") --> (customFloating (W.RationalRect (5/6) (1/12) (1/6) (2/6)))
+   (className =? "zoom") --> (customFloating (W.RationalRect (5/6) (1/12) (3/24) (1/2)))
    -- (className =? "pivotaltracker.com") --> (customFloating (W.RationalRect (5/6) (1/12) (1/6) (2/6)))
  ]
 
