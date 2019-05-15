@@ -1,3 +1,4 @@
+akvcam-dkms
 alacritty-git
 alacritty-terminfo-git
 antigen-git
@@ -16,6 +17,7 @@ google-cloud-sdk
 idnkit
 jdk8
 lastpass-cli-git
+libuvc
 nerd-fonts-complete
 ngrok
 pomo
@@ -25,5 +27,6 @@ st
 trizen
 ttf-iosevka-term
 universal-ctags-git
+webcamoid-git
 yay
 zoom

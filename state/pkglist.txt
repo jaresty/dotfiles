@@ -65,6 +65,7 @@ dhcpcd
 dialog
 diff-so-fancy
 diffutils
+dkms
 dmenu
 dmraid
 dnssec-anchors
@@ -592,6 +593,7 @@ pkcs11-helper
 pkgconf
 plasma-framework
 polkit
+polkit-kde-agent
 polkit-qt5
 poppler
 poppler-glib

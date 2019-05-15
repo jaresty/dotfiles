@@ -91,6 +91,7 @@ main = do
   greenclip <- spawnPipe "greenclip daemon"
   dunst <- spawnPipe "dunst"
   flameshot <- spawnPipe "flameshot"
+  polkit <- spawnPipe "/usr/lib/polkit-kde-authentication-agent-1"
   xmonad =<< statusBar "xmobar" myPP toggleStrutsKey myConfig
 
 myTerminal = "alacritty"
