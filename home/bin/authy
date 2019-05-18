@@ -1,3 +1,3 @@
 #!/bin/bash
 
-google-chrome-stable --profile-directory="Profile 1" --app-id=gaedmjdfmmahhbjefcbgaolhhanlaolb
+google-chrome-stable --profile-directory="Profile" --app-id=gaedmjdfmmahhbjefcbgaolhhanlaolb

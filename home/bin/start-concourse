@@ -1,1 +1,1 @@
-google-chrome-stable --profile-directory='Profile 1' --disable-extensions --app='https://main.bosh-ci.cf-app.com/'
+google-chrome-stable --profile-directory='Profile' --disable-extensions --app='https://main.bosh-ci.cf-app.com/'

@@ -1,2 +1,2 @@
 #!/bin/bash
-google-chrome-stable --profile-directory='Profile 1' --disable-extensions --app="https://pivotaltracker.com/"
+google-chrome-stable --profile-directory='Profile' --disable-extensions --app="https://pivotaltracker.com/"

@@ -9,6 +9,7 @@ authors:
   ja: Joshua Aresty
   cd: Chris Dutra
   mp: Max Peterson
+  ctz: Chris Tarazi
 
 email:
   prefix: pair
@@ -24,5 +25,6 @@ email_addresses:
   ja: joshua.aresty@emc.com
   cd: cdutra@pivotal.io
   mp: mpeterson@pivotal.io
+  ctz: ctarazi@pivotal.io
 
 global: true

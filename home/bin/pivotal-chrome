@@ -1,1 +1,1 @@
-google-chrome-stable --profile-directory='Profile 1' --new-window
+google-chrome-stable --profile-directory='Profile' --new-window
