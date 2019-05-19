@@ -19,9 +19,10 @@ import XMonad.Hooks.ManageHelpers (doRectFloat)
 import qualified XMonad.StackSet as W
 import qualified Data.Map as M
 
+zoomDimensions = (customFloating (W.RationalRect (3/4) (1/12) (1/4) (1/3)))
 scratchpads = [
   NS "devdocs-desktop" "devdocs-desktop" (title =? "DevDocs") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
-  , NS "zoom" "zoom" (fmap ("Zoom Meeting ID" `isInfixOf`) title) (customFloating (W.RationalRect (5/6) (5/6) (1/12) (1/6)))
+  , NS "zoom" "zoom" (fmap ("Zoom Meeting ID" `isInfixOf`) title) zoomDimensions
   , NS "tracker" "start-tracker" (appName =? "pivotaltracker.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "cloudfoundry-slack" "start-cloudfoundry-slack" (appName =? "cloudfoundry.slack.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "slack" "slack" (appName =? "slack") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
@@ -70,7 +71,7 @@ myPP = xmobarPP { ppCurrent = xmobarColor "#429942" "" . wrap "[" "]" }
 toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_a)
 myManageHook = composeAll
  [
-   (className =? "zoom") --> (customFloating (W.RationalRect (4/5) (1/12) (1/5) (1/2)))
+   (className =? "zoom") --> zoomDimensions
    -- (className =? "pivotaltracker.com") --> (customFloating (W.RationalRect (5/6) (1/12) (1/6) (2/6)))
  ]
 
