@@ -15,7 +15,7 @@ xrandr --output DP-2 --primary --auto --rotate normal --output DP-0 --right-of D
 
 xsetwacom set "Wacom Intuos S Pen erasor" Mode Relative                                                                                                                                                                                                                                                                            ✔  16:50:20 
 xsetwacom set "Wacom Intuos S Pen cursor" Mode Relative                                                                                                                                                                                                                                                                            ✔  16:50:27 
-xsetwacom set "Wacom Intuos S Pen stylus" Mode Relative 
+xsetwacom set "Wacom Intuos S Pen stylus" Mode Relative
 
 exec /usr/bin/xmonad
 # exec /usr/bin/awesome

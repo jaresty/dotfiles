@@ -21,13 +21,12 @@ import qualified Data.Map as M
 
 zoomDimensions = (customFloating (W.RationalRect (3/4) (1/12) (1/4) (1/3)))
 scratchpads = [
-  NS "devdocs-desktop" "devdocs-desktop" (title =? "DevDocs") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
+  NS "devdocs-desktop" "devdocs-desktop" (appName =? "devdocs-desktop") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "zoom" "zoom" (fmap ("Zoom Meeting ID" `isInfixOf`) title) zoomDimensions
   , NS "tracker" "start-tracker" (appName =? "pivotaltracker.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "cloudfoundry-slack" "start-cloudfoundry-slack" (appName =? "cloudfoundry.slack.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "slack" "slack" (appName =? "slack") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "google-keep" "start-google-keep" (appName =? "keep.google.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
-  , NS "google-docs" "start-google-docs" (appName =? "docs.google.com") nonFloating
   , NS "concourse" "start-concourse" (appName =? "main.bosh-ci.cf-app.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "miro" "start-miro" (appName =? "miro.com") nonFloating
   , NS "music" "start-music" (appName =? "music.youtube.com__watch") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
@@ -46,14 +45,13 @@ myKeys = [ ("M-p", spawn "rofi -show run")
   , ("M-S-r", renameWorkspace def)
   , ("M-0", toggleWS)
 
-  , ("M1-d", namedScratchpadAction scratchpads "devdocs-desktop")
+  , ("M1-S-d", namedScratchpadAction scratchpads "devdocs-desktop")
   , ("M1-z", namedScratchpadAction scratchpads "zoom")
   , ("M1-c", namedScratchpadAction scratchpads "concourse")
   , ("M1-t", namedScratchpadAction scratchpads "tracker")
   , ("M1-S-s", namedScratchpadAction scratchpads "slack")
   , ("M1-S-b", namedScratchpadAction scratchpads "qutebrowser")
   , ("M1-S-k", namedScratchpadAction scratchpads "google-keep")
-  , ("M1-S-d", namedScratchpadAction scratchpads "google-docs")
   , ("M1-m", namedScratchpadAction scratchpads "miro")
   , ("M1-S-m", namedScratchpadAction scratchpads "music")
 
