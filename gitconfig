@@ -20,6 +20,7 @@
 
   l = log --graph --abbrev-commit --date=relative --decorate --pretty=format:\"%C(yellow)%h%C(bold yellow)%d%Creset %C(blue)%s %C(green)(%ad)%Creset %C(magenta) [%an]%Creset \"
   lg = log --graph --abbrev-commit --date=relative --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+  lola = "log --graph --decorate --oneline --all"
   changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
 [merge]
   summary = true

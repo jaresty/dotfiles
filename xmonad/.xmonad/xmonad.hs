@@ -29,7 +29,7 @@ scratchpads = [
   , NS "google-keep" "start-google-keep" (appName =? "keep.google.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "concourse" "start-concourse" (appName =? "main.bosh-ci.cf-app.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "miro" "start-miro" (appName =? "miro.com") nonFloating
-  , NS "music" "start-music" (appName =? "music.youtube.com__watch") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
+  , NS "music" "start-music" (appName =? "music.youtube.com") (customFloating (W.RationalRect (1/6) (1/6) (2/3) (2/3)))
   , NS "qutebrowser" "qutebrowser" (appName =? "qutebrowser") nonFloating
  ]
 
