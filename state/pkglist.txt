@@ -30,10 +30,13 @@ avahi
 aws-cli
 bash
 bash-completion
+bc
 bind-tools
 binutils
 bison
 boost-libs
+breeze
+breeze-icons
 bridge-utils
 brotli
 btrfs-progs
@@ -85,6 +88,7 @@ dosfstools
 double-conversion
 dunst
 e2fsprogs
+editorconfig-core-c
 efivar
 egl-wayland
 eglexternalplatform
@@ -108,6 +112,7 @@ flac
 flatpak
 flex
 fontconfig
+frameworkintegration
 freetype2
 fribidi
 fuse-common
@@ -231,6 +236,7 @@ haskell-regex-compat
 haskell-regex-posix
 haskell-regex-tdfa
 haskell-resourcet
+haskell-safe-exceptions
 haskell-scientific
 haskell-semigroupoids
 haskell-setlocale
@@ -298,6 +304,7 @@ json-glib
 jsoncpp
 kaccounts-integration
 kactivities
+kactivitymanagerd
 karchive
 kauth
 kbd
@@ -311,30 +318,47 @@ kconfigwidgets
 kcoreaddons
 kcrash
 kdbusaddons
+kde-cli-tools
 kdeclarative
+kdecoration
+kded
+kdelibs4support
+kdesu
+kemoticons
 keyutils
 kglobalaccel
 kguiaddons
+kholidays
 ki18n
 kiconthemes
+kidletime
+kinit
 kio
 kirigami2
 kitemmodels
 kitemviews
 kjobwidgets
 kjs
+kjsembed
 kmod
+knewstuff
 knotifications
+knotifyconfig
 kpackage
 kparts
 kpty
 krb5
 krita
+krunner
+kscreenlocker
 kservice
+ktexteditor
 ktextwidgets
+kunitconversion
 kwallet
 kwayland
 kwidgetsaddons
+kwin
 kwindowsystem
 kxmlgui
 l-smash
@@ -369,6 +393,7 @@ libcurl-compat
 libdaemon
 libdatrie
 libdbusmenu-qt5
+libdmtx
 libdmx
 libdrm
 libedit
@@ -381,6 +406,7 @@ libexif
 libffi
 libfontenc
 libgcrypt
+libgit2
 libglvnd
 libgpg-error
 libgudev
@@ -396,8 +422,10 @@ libinput
 libjpeg-turbo
 libkexiv2
 libksba
+libksysguard
 libldap
 liblqr
+libluv
 libmagick6
 libmbim
 libmm-glib
@@ -424,6 +452,7 @@ libpng
 libproxy
 libpsl
 libpulse
+libqalculate
 libqmi
 libraqm
 libraw
@@ -469,6 +498,7 @@ libvterm
 libwacom
 libwebp
 libwpd
+libwpe
 libx11
 libxau
 libxaw
@@ -493,6 +523,7 @@ libxmu
 libxpm
 libxrandr
 libxrender
+libxres
 libxshmfence
 libxslt
 libxss
@@ -528,6 +559,7 @@ mariadb-libs
 mdadm
 media-player-info
 mesa
+milou
 minizip
 mkinitcpio
 mkinitcpio-busybox
@@ -626,6 +658,8 @@ pixman
 pkcs11-helper
 pkgconf
 plasma-framework
+plasma-integration
+plasma-workspace
 polkit
 polkit-kde-agent
 polkit-qt5
@@ -637,6 +671,7 @@ postgresql
 postgresql-libs
 potrace
 ppp
+prison
 procps-ng
 protobuf
 psmisc
@@ -678,6 +713,7 @@ python-gobject
 python-greenlet
 python-html5lib
 python-idna
+python-importlib-metadata
 python-jinja
 python-jmespath
 python-josepy
@@ -685,6 +721,7 @@ python-jsonschema
 python-lockfile
 python-markupsafe
 python-mock
+python-more-itertools
 python-msgpack
 python-packaging
 python-paramiko
@@ -722,6 +759,7 @@ python-urllib3
 python-webencodings
 python-websocket-client
 python-yaml
+python-zipp
 python-zope-component
 python-zope-deferredimport
 python-zope-deprecation
@@ -732,6 +770,8 @@ python-zope-proxy
 python2
 qca
 qemu
+qqc2-desktop-style
+qrencode
 qt5-base
 qt5-declarative
 qt5-graphicaleffects
@@ -796,6 +836,7 @@ startup-notification
 stow
 strace
 sudo
+syntax-highlighting
 sysfsutils
 systemd
 systemd-libs
@@ -810,9 +851,11 @@ threadweaver
 tig
 tldr
 tmux
+tpm2-tss
 tree
 tslib
 ttf-dejavu
+ttf-hack
 tzdata
 udftools
 udisks2
@@ -847,6 +890,7 @@ wireless_tools
 wmctrl
 woff2
 wpa_supplicant
+wpebackend-fdo
 x264
 x265
 xbitmaps
@@ -916,6 +960,7 @@ xorg-xkill
 xorg-xlsatoms
 xorg-xlsclients
 xorg-xlsfonts
+xorg-xmessage
 xorg-xmodmap
 xorg-xpr
 xorg-xprop
@@ -934,6 +979,7 @@ xvidcore
 xz
 yajl
 yarn
+zip
 zita-alsa-pcmi
 zita-resampler
 zlib

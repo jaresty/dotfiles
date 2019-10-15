@@ -5,6 +5,7 @@ bashdb
 bosh-cli
 chruby
 cloudfoundry-cli
+cuelang-cue-git
 dasht
 devdocs-desktop
 direnv
@@ -14,12 +15,16 @@ gcc5
 git-duet
 google-chrome
 google-cloud-sdk
+icu58
+icu60
 idnkit
 jdk8
 lastpass-cli-git
 libinput-gestures
 libuvc
+libxerces-c-3.1
 mkpasswd
+ncurses5-compat-libs
 nerd-fonts-complete
 ngrok
 pomo
@@ -30,5 +35,6 @@ st
 trizen
 ttf-iosevka-term
 universal-ctags-git
+vmware-ovftool
 yay
 zoom
