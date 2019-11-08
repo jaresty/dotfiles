@@ -8,7 +8,9 @@ alsa-plugins
 alsa-utils
 aom
 apm
+appstream
 appstream-glib
+appstream-qt
 archlinux-keyring
 argon2
 aria2
@@ -149,8 +151,8 @@ glu
 gmp
 gnupg
 gnutls
+go
 go-bindata
-go-pie
 gobject-introspection-runtime
 gpgme
 gpm
@@ -279,7 +281,6 @@ iana-etc
 icu
 ifenslave
 ijs
-ilmbase
 imlib2
 inetutils
 inkscape
@@ -304,6 +305,7 @@ json-glib
 jsoncpp
 kaccounts-integration
 kactivities
+kactivities-stats
 kactivitymanagerd
 karchive
 kauth
@@ -346,6 +348,7 @@ knotifications
 knotifyconfig
 kpackage
 kparts
+kpeople
 kpty
 krb5
 krita
@@ -422,6 +425,7 @@ libinput
 libjpeg-turbo
 libkexiv2
 libksba
+libkscreen
 libksysguard
 libldap
 liblqr
@@ -811,6 +815,8 @@ sbc
 scrot
 sdl
 sdl2
+sdl_image
+sdl_ttf
 seabios
 sed
 semver
