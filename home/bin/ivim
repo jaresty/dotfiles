@@ -1,0 +1,40 @@
+#!/bin/bash
+
+options=$(getopt -o i: --long input-file: -- "$@")
+[ $? -eq 0 ] || {
+  echo "Incorrect options provided"
+  exit 1
+}
+
+show_help() {
+  echo "ivim [options] FILENAME"
+  echo "  Edit a file and run it in a tmux split whenever the file changes."
+  echo ""
+  echo "  -i FILE|--input-file=FILE   Passes the contents of FILE to the script being edited via STDIN."
+}
+
+input=$(mktemp)
+eval set -- "$options"
+while true; do
+  case "$1" in
+    -i|--input-file)
+      cat $2 > $input
+      shift 2;;
+    --) shift; break;;
+    *) show_help; exit 1 ;;
+  esac
+done
+
+if [ $# != 1 ];then
+ show_help
+ exit 1
+fi
+
+touch $1
+chmod +x $1
+
+tmux split-pane -h "ls $1 | entr -c -s './$1 < $input'"
+tmux select-pane -t .0
+nvim $1
+tmux kill-pane -t .1
+rm $input
