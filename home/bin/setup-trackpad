@@ -1,6 +1,6 @@
 #!/bin/bash
 
-xinput set-prop "Apple Inc. Magic Trackpad 2" 'libinput Tapping Enabled' 1
-xinput set-prop "Apple Inc. Magic Trackpad 2" 'libinput Tapping Drag Lock Enabled' 1
-xinput set-prop "Apple Inc. Magic Trackpad 2" "libinput Natural Scrolling Enabled" 1
-xinput set-prop "Apple Inc. Magic Trackpad 2" 'libinput Accel Speed' 0.3
+xinput set-prop "DELL07E6:00 06CB:76AF Touchpad" 'libinput Tapping Enabled' 1
+xinput set-prop "DELL07E6:00 06CB:76AF Touchpad" 'libinput Tapping Drag Lock Enabled' 1
+xinput set-prop "DELL07E6:00 06CB:76AF Touchpad" "libinput Natural Scrolling Enabled" 1
+xinput set-prop "DELL07E6:00 06CB:76AF Touchpad" 'libinput Accel Speed' 0.3
