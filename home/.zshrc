@@ -65,6 +65,10 @@ export DISPLAY=:0
 
 source /usr/share/chruby/chruby.sh
 
+if which ruby >/dev/null && which gem >/dev/null; then
+  PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+fi
+
 xset r rate 300 35
 
 SSH_ENV="$HOME/.ssh/environment"
