@@ -1,2 +1,2 @@
-gpd.service
+systemd-swap.service
 systemd-timesyncd.service
